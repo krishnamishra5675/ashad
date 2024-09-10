@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: 'Merriweather', serif;
+
+      background-image: linear-gradient(
+          to right,
+          #ffffff    0%,
+          #dcdcdc         33%,
+         #d3d3d3      66%,
+           #c0c0c0    100%
+
+
+          );
+
+  }
+
+  div{
+    display: block;
+  }
+  .navbar{
+    background-color: #fff;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(
+        to right,
+        #ffffff    0%,
+        #dcdcdc         33%,
+       #d3d3d3      66%,
+         #c0c0c0    100%
+
+
+        );
+  }
+  .navbar__sub
+  {
+      display: flex;
+      align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    background-color: transparent;
+  }
+  .uniformwala__logo{
+    width: 100%;
+      background-color: transparent;
+
+  }
+  .uniformwala__text
+  {
+    font-size: 100%;
+    margin-left: -2px;
+  }
+
+
+  .bttn__division{
+    display: flex;
+  justify-content: flex-end;
+  }
+  .btn{
+
+  background-image: linear-gradient(
+      to right,
+      #46484F  0%,
+        #3A3C44  33%,
+         #2B2D35   66%,
+      #23252D  100%
+
+
+      );
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 4px;
+      font-weight: 600;
+
+    }
+    .bttn{
+      background-color: transparent;
+        color: #fff;
+        border: none;
+        margin: 2px;
+        padding: 12px;
+        border-radius: 6px;
+        font-weight: 600;
+  font-size: 20px;
+      }
+
+    .bttn:hover{
+
+      background-color: transparent;
+
+    border: 0.5px solid   #fff;
+    cursor: pointer;
+  }
+.footer__top{
+
+    background-image: linear-gradient(
+        to right,
+        #46484F  0%,
+          #3A3C44  33%,
+           #2B2D35   66%,
+        #23252D  100%
+
+
+        );
+        color: #fff;
+      padding: 45px 0px;
+    }
+    h1,.footer__headings{
+      font-size: 20px;
+  color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+  .row__footer{
+      display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+    .footer__top__region__left,.footer__top__region__center,.footer__top__region__right{
+
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      font-weight: 700;
+      padding-bottom: 10px;
+    }
+    .quick__links__item,.Links,.contact__details__item
+    {
+      font-size: 13px;
+      line-height: 14px;
+      color: #fff;
+      font-weight: 500;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
+      align-items: flex-start;
+      justify-content: flex-start;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .arrow__right{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin-right: 10px;
+    }
+
+
+  .footer__bottom{
+    height: 40px;
+
+      background-image: linear-gradient(
+          to right,
+          #46484F  0%,
+            #3A3C44  33%,
+             #2B2D35   66%,
+          #23252D  100%
+
+
+          );
+          color: #fff;
+    color: #ffffff;
+
+  }
+  .copyright
+  {
+    font-size: 13px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 6px;
+    display: flex;
+  align-items: center;
+    justify-content:center;
+    margin-bottom: 5px;
+
+  }
+
+
+  .productList{
+    display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin: 1.4rem;
+}
+
+.productCard{
+  position: relative;
+  background-color: var(--color-grey-primary);
+  margin: 1.9rem;
+  flex: 1 0 25rem;
+  max-width: 300px;
+max-height: 400px;
+  transition: 0.2s;
+  background-color: #fff;
+
+
+}
+
+.productCard:hover{
+  transform: translateY(-0.5rem);
+  box-shadow: 0.5rem 0.75rem 1.5rem #bbbbbb;
+}
+
+.productImage{
+  margin-top: 2rem;
+  margin: 3rem;
+  max-width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCard__cart{
+  position: absolute;
+  right: 0;
+
+  margin: 0.3rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+/*
+.productCard__wishlist{
+  position: absolute;
+  right: 3rem;
+  margin: 0.3rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.productCard__fastSelling {
+  position: absolute;
+  font-size: 2rem;
+  left: 0;
+  margin: 1rem;
+  fill: var(--color-orange-primary);
+}*/
+
+.productCard__content {
+  margin: 2rem;
+
+}
+
+.productName{
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayStack__1,
+.displayStack__2{
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productDescription{
+  font-size: 1rem;
+  font-weight: 400;
+}

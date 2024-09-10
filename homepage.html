@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css"><title></title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__sub">
+        <div class="navbar__uniform__logo">
+          <img src="uniformwala.png" alt="logo" class="uniformwala__logo" >
+        </div>
+        <div class="uniformwala__text">
+          <h3>.in</h3>
+        </div>
+      </div>
+
+    </nav>
+    <div class="btn">
+      <div class="bttn__division">
+
+        <a href="C:\Users\krish\Desktop\uniproject\homepage.html">  <button type="button" class="bttn button__home">Home</button></a>
+        <button type="button" class="bttn button__about">About</button>
+        <a href="C:\Users\krish\Desktop\uniproject\products.html">   <button type="button" class="bttn button__products">Products</button></a>
+        <button type="button" class="bttn button__contact">Contact</button>
+
+
+      </div>
+
+    </div>
+  </header>
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="corporate.jpg" style="width: 1000px;
+        height: 660px;
+        margin: 20px;">
+        <div class="text">Outfits that will make you<br> comfortably beautiful.</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="hospital.jpg" style="width: 1000px;
+        height: 660px;
+        margin: 20px;">
+        <div class="text">Delicate clothes for<br> delicate you.</div>
+      </div>
+      <div class="mySlides fade">
+        <img src="security.jpg" style="width: 1000px;
+        height: 660px;
+        margin: 20px;">
+        <div class="text">Dress like  you  are<br> still a teen.</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div><script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                                  <footer class="footer__main">
+                                    <div class="footer__top ">
+                                      <div class="container">
+                                        <div class="row__footer">
+                                          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+                                            <div class="inner-column tab-mb-25">
+
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-12 col-md-6 col-lg-4 ">
+                                            <div class="inner-column tab-mb-25">
+                                              <div class="footer__top__region__center">
+                                                <div class="address" id="address__of__wcd">
+                                                  <h1>Address</h1>
+                                                  <div><ul class="contact__details">
+                                                    <li class="contact__details__item"><i class='fas fa-map-marker-alt' ></i> 6978,2nd & 3rd floor,<br /><br />
+                                                      Gali Kumharan, Pahari Dhiraj,<br /><br />
+                                                      Sadar Bazaar, Delhi - 110006</li>
+                                                      <li class="contact__details__item"><i class='fas fa-phone' ></i> +91 9811189383</li>
+
+                                                    <a href="https://www.indiamart.com/urfa-enterprises/?utm_campaign=imob_company_share&utm_medium=social&utm_source=social">IndiaMart-URFA ENTERPRISES</a>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-12 col-md-6 col-lg-4">
+                                            <div class="inner-column tab-mb-25">
+                                              <div class="footer__top__region__right">
+                                                <div><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3501.0373609836474!2d77.20512507550171!3d28.65859997565052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM5JzMxLjAiTiA3N8KwMTInMjcuNyJF!5e0!3m2!1sen!2sin!4v1700419665621!5m2!1sen!2sin" width="400" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="footer__bottom">
+                                      <div class="container">
+                                        <div class="row__footer">
+                                          <div class="footer__bottom__region__bottom">
+                                            <div class="copyright" id="wcd__copyright"><p>Copyright © - All Right Reserved - URFA ENTERPRISES.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </footer>
+
+                                </body>
+                                </html>
